@@ -14,5 +14,6 @@ http://www.mulesoft.org/schema/mule/secure-property-placeholder http://www.mules
 		<http:listener config-ref="HTTP_Listener_Configuration" path="/*" doc:name="HTTP"/>
 		<set-payload value="Hello world  ${name}" doc:name="Set Payload"/>
 		<logger message="#[payload]" level="INFO" doc:name="Logger"/>
+		<logger level="INFO" doc:name="Logger"/>
 	</flow>
 </mule>
